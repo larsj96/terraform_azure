@@ -3,6 +3,7 @@ locals {
     location = "norwayeast"
     tags = {
       owner = "Managed by terraform"
+      GitHubRepo = "https://github.com/larsj96/terraform_azure"
     }
   }
 
@@ -39,7 +40,7 @@ resource "azurerm_resource_group" "resource_group" {
   for_each = local.environments
 
   name     = each.value.name
-  location = lookup(each.value, "location", local.common_attributes.location) # Use environment-specific location if available
+  location = lookup(each.value, "location", local.common_attributes.location) # Use environment-specific location if available - otherwise override in the locals above, see dev-resource-group
 
   tags = merge(
     local.common_attributes.tags,
