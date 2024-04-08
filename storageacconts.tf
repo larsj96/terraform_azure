@@ -11,7 +11,7 @@ resource "azurerm_storage_account" "storage_account" {
 }
 
 resource "random_string" "storage_suffix" {
-  length  = 4
+  length  = 8
   special = false
   upper   = false
 }
