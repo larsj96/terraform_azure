@@ -1,0 +1,1 @@
+# https://learn.microsoft.com/en-us/azure/dns/dns-get-started-terraform?tabs=azure-cli
