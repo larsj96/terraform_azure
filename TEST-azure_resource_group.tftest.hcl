@@ -1,5 +1,13 @@
 # https://developer.hashicorp.com/terraform/language/tests
 
+# look here for some more example: https://www.hashicorp.com/blog/testing-hashicorp-terraform
+
+# https://developer.hashicorp.com/terraform/language/checks
+# If a postcondition/ lifecycle block fails, it blocks Terraform from executing the current operation.
+# If a check block fails, it does not block Terraform from executing an operation.
+
+
+
 
 variables {
   resource_group_names = {
@@ -32,7 +40,7 @@ run "prod_resource_group" {
 }
 
 
-# Example for the "dev" environment
+# Example for the "dev" environment - this is failing on purpose since location is wrong :-)
 run "test_resource_group" {
   command = plan
 
