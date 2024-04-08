@@ -22,7 +22,7 @@ locals {
     }
     dev = {
       name     = "dev-resource-group"
-      location = "westeurope", # Override because norway west/east are slow with getting new features to azure
+      location = "westeurope", # Override because norway west/east are slow with getting new features to azure + also for creating error while creating terraform test files :)
       tags = {
         environment = "dev"
       }
