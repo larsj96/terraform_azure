@@ -12,14 +12,6 @@ resource "azurerm_monitor_diagnostic_setting" "storage_account_auditing" {
   target_resource_id  = each.value.id
   log_analytics_workspace_id = azurerm_log_analytics_workspace.Auditing-workspace.id
 
- log {
-    category = "AuditEvent"
-    enabled  = false
-
-    retention_policy {
-      enabled = false
-    }
-  }
 
   metric {
     category = "AllMetrics"
