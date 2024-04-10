@@ -15,3 +15,28 @@ az ad sp create-for-rbac --name terraform_cloud_devops-kreft --role Contributor 
 
 
 https://www.pimwiddershoven.nl/entry/hugo-static-website-on-azure-static-web-app-terraform/
+
+
+https://learn.microsoft.com/en-us/security/benchmark/azure/mcsb-devops-security
+https://learn.microsoft.com/en-us/security/benchmark/azure/baselines/app-service-security-baseline
+
+
+
+
+
+Microsoft Defender for Cloud monitoring
+Azure Policy built-in definitions - Microsoft.Web:
+
+Name
+(Azure portal)	Description	Effect(s)	Version
+(GitHub)
+App Service apps should use managed identity	Use a managed identity for enhanced authentication security	AuditIfNotExists, Disabled	3.0.0
+
+
+IM-8: Restrict the exposure of credential and secrets
+Features
+Service Credential and Secrets Support Integration and Storage in Azure Key Vault
+Description: Data plane supports native use of Azure Key Vault for credential and secrets store. Learn more.
+
+Supported	Enabled By Default	Configuration Responsibility
+True	False	Customer
