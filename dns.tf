@@ -18,6 +18,10 @@ resource "azurerm_dns_cname_record" "web_apps_cname" {
   resource_group_name = azurerm_resource_group.resource_group["common"].name
   ttl                 = 3600
   record              = each.value  # Default hostname for the Azure Static Web App
+
+  tags = {
+    Environment = "common"
+  }
 }
 
 
