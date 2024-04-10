@@ -6,5 +6,5 @@ output "azure_lanilsen_xyz_ns" {
 
 output "azurerm_static_web_app_api_keys" {
   value = { for k, app in azurerm_static_web_app.static_web_app : k => app.api_key }
-  sensitive = false
+  sensitive = true
 }
