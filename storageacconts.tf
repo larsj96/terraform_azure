@@ -21,7 +21,6 @@ resource "azurerm_storage_account" "storage_account" {
 
 resource "azurerm_storage_management_policy" "storage_account_policy" {
   for_each            = azurerm_storage_account.storage_account
-
   storage_account_id = each.value.id
 
   rule {

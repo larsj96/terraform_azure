@@ -12,3 +12,6 @@ az ad sp create-for-rbac --name terraform_cloud_devops-kreft --role Contributor 
 
 
 # Terraform Test requires version Terraform v1.6.0 ++ and  az CLI installed on PC
+
+
+https://www.pimwiddershoven.nl/entry/hugo-static-website-on-azure-static-web-app-terraform/
