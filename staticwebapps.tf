@@ -7,7 +7,6 @@ resource "azurerm_static_web_app" "static_web_app" {
   tags                = azurerm_resource_group.resource_group[each.key].tags
 
   sku_tier   = "Standard"
-
 }
 
 
