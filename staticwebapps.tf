@@ -6,11 +6,13 @@ resource "azurerm_static_web_app" "static_web_app" {
   location            = "westeurope" #azurerm_resource_group.resource_group[each.key].location - norwayeast not supported :(
   tags                = azurerm_resource_group.resource_group[each.key].tags
 
-  sku_tier   = "Standard"
+  sku_tier   = "Free" #Standard
 
-    identity {
-    type = "SystemAssigned"
-  }
+
+ # identities cannot be used with the Free tier of Static Web Apps
+  #   identity {
+  #   type = "SystemAssigned"
+  # }
 
 }
 
