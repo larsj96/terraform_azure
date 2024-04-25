@@ -36,7 +36,7 @@ resource "azurerm_traffic_manager_profile" "sftp" {
 resource "azurerm_traffic_manager_external_endpoint" "onprem" {
   profile_id        = azurerm_traffic_manager_profile.sftp.id
   name              = "sftp"
-  target            = "sftp.azure.lanilsen.xyz"
+  target            = "81.166.49.48" # create code to get this automaticly from terraform/fortigate state :)
   endpoint_location = "westeurope"
   weight            = 1
 }
