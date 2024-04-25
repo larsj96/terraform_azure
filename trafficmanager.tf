@@ -4,7 +4,7 @@ resource "azurerm_traffic_manager_profile" "sftp" {
   traffic_routing_method      = "Priority"
 
   dns_config {
-    relative_name = "sftp"
+    relative_name = "sftp-lanilsen-kamera"
     ttl           = 30
   }
 
