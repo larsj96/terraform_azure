@@ -12,7 +12,6 @@
 #   target_resource_id  = each.value.id
 #   log_analytics_workspace_id = azurerm_log_analytics_workspace.Auditing-workspace.id
 
-
 #   metric {
 #     category = "AllMetrics"
 

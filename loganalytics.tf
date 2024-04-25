@@ -1,5 +1,6 @@
 
 
+
 # Auditing Workspaces for all azure resources like storage accont, vnet
 resource "azurerm_log_analytics_workspace" "Auditing-workspace" {
   name                = "Auditing"  # Choose a unique name for your workspace
